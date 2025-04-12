@@ -4,6 +4,7 @@ import styles from './Hero.module.scss';
 export default function Hero() {
   return (
     <section className={styles.hero}>
+
       <div className={styles.info}>
         <p>"Vision without execution is just hallucination."</p>
         <h2>

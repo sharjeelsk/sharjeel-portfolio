@@ -5,7 +5,13 @@
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
   padding: 1rem;
+  place-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
+
+
 
 .info p:first-child {
   text-decoration: underline;
@@ -38,11 +44,16 @@
   margin-left: 2rem;
   margin-top: 0;
   margin-bottom: 0;
-  background: linear-gradient(90deg, variables.$primary, variables.$tertiary);
+  background: linear-gradient(
+    90deg,
+    variables.$primary,
+    variables.$secondary,
+    variables.$tertiary
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  animation: gradientAnimation 2s infinite alternate;
+  background-size: 300% 100%;
+  animation: gradientAnimation 3s infinite alternate;
 }
 
 @keyframes gradientAnimation {
