@@ -1,0 +1,15 @@
+@use './variables.scss' as variables;
+
+
+body{
+    h1, h2{
+        font-family: variables.$big-shoulders;
+        font-weight: 600;
+    }
+    font-family: variables.$roboto;
+    font-weight: 300;
+    background-color: black;
+    color: variables.$primary;
+}
+
+

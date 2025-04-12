@@ -1,0 +1,55 @@
+@use '../../styles/variables';
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.info p:first-child {
+  text-decoration: underline;
+  text-decoration-color: variables.$secondary;
+  font-style: italic;
+  opacity: 0.9;
+  font-size: 1.2rem;
+}
+
+.info > h2 {
+  width: 70%;
+}
+
+.info > h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-left: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.info > h2 > span {
+  color: variables.$secondary;
+  font-size: 2.3rem;
+}
+
+.gradientText {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-left: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: linear-gradient(90deg, variables.$primary, variables.$tertiary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  animation: gradientAnimation 2s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
