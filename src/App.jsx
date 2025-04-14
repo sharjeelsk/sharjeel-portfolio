@@ -7,6 +7,7 @@ import "./styles/main.scss"
 import Timeline from './sections/timeline/Timeline'
 import Contact from './sections/contact/Contact'
 import CustomCursor from './components/CustomCursor/CustomCursor'
+import Projects from './sections/projects/Projects'
 
 export default function App() {
   return (
@@ -20,7 +21,9 @@ export default function App() {
         <Hero />
         <Skills />
         <Timeline />
+        <Projects />
         <Contact />
+
       </div>
     </>
   )

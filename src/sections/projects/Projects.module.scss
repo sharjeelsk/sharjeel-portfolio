@@ -1,0 +1,79 @@
+@use '../../styles/variables';
+
+.projectParent {
+    margin-top: 10%;
+}
+
+.projectParent > h1, .projectParent > p {
+    text-align: center;
+}
+
+.projectContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr; // Two columns for medium screens
+    }
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr; // One column for small screens
+        padding: 1rem; // Less padding on small screens
+    }
+    
+    .projectCard {
+        background: rgba(255, 255, 255, 0.03);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid #068FFF;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        position: relative; /* Added relative positioning */
+
+        img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom: 12px solid variables.$tertiary;
+            position: relative;
+            margin:0;
+        }
+
+        h3 {
+            background-color: variables.$tertiary;
+            padding: 2%;
+            margin: 0;
+            font-size: 1.4rem;
+            @media (max-width: 768px) {
+                font-size: 1.2rem;
+            }
+            @media (max-width: 480px) {
+                font-size: 1rem;
+            }
+        }
+
+        h3, p {
+            text-align: center;
+        }
+
+        p {
+            padding: 0 2rem;
+            text-align: justify;
+            font-size: 1rem; /* Default font size for larger screens */
+            @media (max-width: 768px) {
+                font-size: 0.95rem; /* Slightly smaller text on medium screens */
+            }
+            @media (max-width: 480px) {
+                font-size: 0.9rem; /* Even smaller text on small screens */
+                padding: 0 1rem; /* Less padding for small screens */
+            }
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(31, 38, 135, 0.5);
+        }
+    }
+}
