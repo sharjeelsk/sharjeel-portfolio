@@ -1,0 +1,129 @@
+@use '../../styles/variables';
+
+.timelineParent {
+    margin-top: 5%;
+    h1{
+        text-align: center;
+        margin-bottom: 5%;
+        font-size: 3rem;
+    }
+}
+
+.timeline {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    background-image: 
+      radial-gradient(circle, white 10%, transparent 10%), 
+      radial-gradient(circle, white 10%, transparent 10%), 
+      radial-gradient(circle, white 10%, transparent 10%),
+      radial-gradient(circle, white 10%, transparent 10%),
+      linear-gradient(white 2px, white 2px);
+    background-repeat: no-repeat;
+    background-size: 10px 10px, 10px 10px, 10px 10px, 10px 10px, 2px 100%;
+    background-position: 
+      center 15%, 
+      center 35%, 
+      center 55%, 
+      center 75%, 
+      center center;
+    position: relative;
+}
+  
+.content {
+    position: relative;
+    .year{
+        text-align: right;
+        width: 48%;
+        padding-bottom: 1%;
+        border-bottom: 2px solid variables.$secondary;
+    }
+
+    .description {
+        width: 48%;
+        text-align: right;
+        color: white;
+    }
+    
+}
+
+/* Dot part */
+.content::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, variables.$secondary, variables.$tertiary);
+    z-index: 2;
+}
+
+
+.contentRight {
+    position: relative;
+    margin-top: 5%;
+    .year{
+        text-align: left;
+        width: 48%;
+        margin-left: auto;
+        padding-bottom: 1%;
+        border-bottom: 2px solid variables.$secondary;
+    }
+
+    .description {
+        width: 48%;
+        margin-left: auto;
+        text-align: left;
+        color: white;
+    }
+    
+}
+
+/* Dot part */
+.contentRight::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, variables.$secondary, variables.$tertiary);
+    z-index: 2;
+}
+
+
+.contentLeft {
+    position: relative;
+    margin-top: 5%;
+    .year{
+        text-align: right;
+        width: 48%;
+        padding-bottom: 1%;
+        border-bottom: 2px solid variables.$secondary;
+    }
+
+    .description {
+        width: 48%;
+        text-align: right;
+        color: white;
+    }
+    
+}
+
+/* Dot part */
+.contentLeft::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, variables.$secondary, variables.$tertiary);
+    z-index: 2;
+}

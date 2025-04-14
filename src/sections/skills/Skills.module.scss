@@ -1,6 +1,67 @@
 @use '../../styles/variables';
 
+.skillsParent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
 
-.skills{
-    min-height: 100vh;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skillsDescription {
+  h1 {
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+  }
+  p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+}
+
+.skills {
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skill {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start; // Not center
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid #068FFF;
+  border-radius: 10px;
+  padding-top: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(31, 38, 135, 0.5);
+  }
+
+  img {
+    width: 50%;
+    margin-bottom: 0.8rem; // <-- now margin works properly!
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #fff;
+  }
 }
