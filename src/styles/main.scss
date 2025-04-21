@@ -11,6 +11,8 @@
   @return string.unquote($value);
 }
 
+
+
 $shadows-small: multiple-box-shadow(700);
 $shadows-medium: multiple-box-shadow(200);
 $shadows-big: multiple-box-shadow(100);
@@ -105,4 +107,30 @@ html, body {
   position: relative;
   z-index: 1; // To be above the stars
   padding: 20px;
+}
+
+/* For modern browsers */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* light neutral background for contrast */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #4E4FEB, #068FFF);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #068FFF, #4E4FEB);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4E4FEB transparent;
 }

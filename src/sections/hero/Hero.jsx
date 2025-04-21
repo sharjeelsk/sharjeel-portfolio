@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
 
-      <div className={styles.info}>
+      <div data-aos="fade-up" className={styles.info}>
         <p>"Vision without execution is just hallucination."</p>
         <h2>
           Specializing in the <span>MERN</span> stack, I transform business ideas
@@ -15,7 +15,9 @@ export default function Hero() {
         <h1 className={styles.gradientText}>~ Sharjeel Shaikh</h1>
       </div>
 
-      <div className={styles.profileSection}>profile section</div>
+      <div className={styles.profileSection}>
+        <img src="/profile.png" alt="profile" />
+      </div>
     </section>
   );
 }

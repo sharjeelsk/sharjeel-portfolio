@@ -14,28 +14,18 @@ export default function Projects() {
         <div className={styles.projectCard}>
             <img src={CleverPe} alt="CleverPe" />
             <h3>CleverPe</h3>
-            <p>Veniam veniam excepteur anim ullamco sit Lorem Lorem esse anim aliqua dolor pariatur. Elit commodo occaecat sit in quis ex officia sit aliqua irure. Enim et duis magna consectetur qui ex aliqua occaecat veniam exercitation culpa eu. Esse nostrud dolore magna duis mollit veniam est aliqua quis officia voluptate pariatur mollit reprehenderit. Aliqua incididunt do est in pariatur consectetur exercitation id fugiat nisi pariatur non.
-                Laborum labore non anim incididunt. Incididunt tempor do sunt esse Lorem in officia commodo est. Est qui voluptate do eiusmod occaecat laborum deserunt eu duis nulla et esse reprehenderit.
-
-Aliqua enim consequat duis incididunt aliquip occaecat. Occaecat ad amet in in ut velit enim culpa pariatur ullamco et sunt. Magna proident eiusmod amet ex laborum. Dolor sit enim sunt ex. Ad quis tempor dolor consequat exercitation culpa ea quis reprehenderit officia proident laborum ex. Aliquip cillum dolore fugiat aute anim.
-
-Tempor magna id excepteur minim do voluptate dolor nulla. Culpa pariatur qui exercitation ea reprehenderit ipsum veniam. Cillum eu dolore reprehenderit consequat amet ea aute id. Reprehenderit culpa labore reprehenderit cupidatat et. Esse nulla commodo fugiat dolor et dolore exercitation nulla exercitation sunt anim irure ullamco. Velit deserunt ipsum velit pariatur dolor aliquip duis id Lorem.
-
-Ut nisi proident commodo eu eu veniam consectetur dolor aliquip aliqua. Quis ullamco quis fugiat ipsum ad. Tempor adipisicing est laboris do amet quis ea eiusmod. Proident dolor nulla labore excepteur non sint sunt ipsum labore nulla est ex velit. Deserunt enim sit irure voluptate voluptate.
+            <p>
+            CleverPe is a cutting-edge fintech platform that offers a seamless Buy Now, Pay Later experience without the need for traditional credit cards. As the Frontend Lead, I contributed to the architecture and development of four core applications that serve customers, merchants, and admins. Our goal was to create a smooth, scalable, and intuitive experience for users across various devices.
+            Built using React, Node.js, and MongoDB, CleverPe empowers users to make instant payments, track purchases, and manage finances — all within a secure and user-friendly environment. My role involved crafting clean UI, ensuring cross-platform compatibility, and optimizing performance for a rapidly growing user base.
             </p>
         </div>
 
         <div className={styles.projectCard}>
         <img src={CashX} alt="CleverPe" />
             <h3>CashX</h3>
-            <p>Veniam veniam excepteur anim ullamco sit Lorem Lorem esse anim aliqua dolor pariatur. Elit commodo occaecat sit in quis ex officia sit aliqua irure. Enim et duis magna consectetur qui ex aliqua occaecat veniam exercitation culpa eu. Esse nostrud dolore magna duis mollit veniam est aliqua quis officia voluptate pariatur mollit reprehenderit. Aliqua incididunt do est in pariatur consectetur exercitation id fugiat nisi pariatur non.
-                Laborum labore non anim incididunt. Incididunt tempor do sunt esse Lorem in officia commodo est. Est qui voluptate do eiusmod occaecat laborum deserunt eu duis nulla et esse reprehenderit.
-
-Aliqua enim consequat duis incididunt aliquip occaecat. Occaecat ad amet in in ut velit enim culpa pariatur ullamco et sunt. Magna proident eiusmod amet ex laborum. Dolor sit enim sunt ex. Ad quis tempor dolor consequat exercitation culpa ea quis reprehenderit officia proident laborum ex. Aliquip cillum dolore fugiat aute anim.
-
-Tempor magna id excepteur minim do voluptate dolor nulla. Culpa pariatur qui exercitation ea reprehenderit ipsum veniam. Cillum eu dolore reprehenderit consequat amet ea aute id. Reprehenderit culpa labore reprehenderit cupidatat et. Esse nulla commodo fugiat dolor et dolore exercitation nulla exercitation sunt anim irure ullamco. Velit deserunt ipsum velit pariatur dolor aliquip duis id Lorem.
-
-Ut nisi proident commodo eu eu veniam consectetur dolor aliquip aliqua. Quis ullamco quis fugiat ipsum ad. Tempor adipisicing est laboris do amet quis ea eiusmod. Proident dolor nulla labore excepteur non sint sunt ipsum labore nulla est ex velit. Deserunt enim sit irure voluptate voluptate.
+            <p>
+            CashX is a next-generation fintech solution designed to digitize cash for underbanked communities, providing them with access to essential financial services around the clock. As the Lead Developer, I architected and built the entire platform using the MERN stack and PostgreSQL.
+            The system includes self-service kiosks, a robust back-office dashboard, and mobile apps for both Android and iOS — enabling users to perform bill payments, money transfers, mobile top-ups, and in-app shopping with ease. CashX is built for scale, with a focus on accessibility, reliability, and user-first design — aiming to empower millions across the USA and Mexico with secure, cashless experiences.
             </p>
         </div>
 
@@ -43,28 +33,20 @@ Ut nisi proident commodo eu eu veniam consectetur dolor aliquip aliqua. Quis ull
         <div className={styles.projectCard}>
         <img src={TgCrypt} alt="CleverPe" />
             <h3>Tg Crypt</h3>
-            <p>Veniam veniam excepteur anim ullamco sit Lorem Lorem esse anim aliqua dolor pariatur. Elit commodo occaecat sit in quis ex officia sit aliqua irure. Enim et duis magna consectetur qui ex aliqua occaecat veniam exercitation culpa eu. Esse nostrud dolore magna duis mollit veniam est aliqua quis officia voluptate pariatur mollit reprehenderit. Aliqua incididunt do est in pariatur consectetur exercitation id fugiat nisi pariatur non.
-                Laborum labore non anim incididunt. Incididunt tempor do sunt esse Lorem in officia commodo est. Est qui voluptate do eiusmod occaecat laborum deserunt eu duis nulla et esse reprehenderit.
+            <p>
+            TgCrypt is a blockchain-powered application built using the MERN stack, designed to facilitate secure crypto transfers across wallet addresses. It provides a simple, intuitive interface where users can send cryptocurrencies seamlessly while tracking transaction history in real-time.
 
-Aliqua enim consequat duis incididunt aliquip occaecat. Occaecat ad amet in in ut velit enim culpa pariatur ullamco et sunt. Magna proident eiusmod amet ex laborum. Dolor sit enim sunt ex. Ad quis tempor dolor consequat exercitation culpa ea quis reprehenderit officia proident laborum ex. Aliquip cillum dolore fugiat aute anim.
-
-Tempor magna id excepteur minim do voluptate dolor nulla. Culpa pariatur qui exercitation ea reprehenderit ipsum veniam. Cillum eu dolore reprehenderit consequat amet ea aute id. Reprehenderit culpa labore reprehenderit cupidatat et. Esse nulla commodo fugiat dolor et dolore exercitation nulla exercitation sunt anim irure ullamco. Velit deserunt ipsum velit pariatur dolor aliquip duis id Lorem.
-
-Ut nisi proident commodo eu eu veniam consectetur dolor aliquip aliqua. Quis ullamco quis fugiat ipsum ad. Tempor adipisicing est laboris do amet quis ea eiusmod. Proident dolor nulla labore excepteur non sint sunt ipsum labore nulla est ex velit. Deserunt enim sit irure voluptate voluptate.
+With blockchain integration at its core, TgCrypt emphasizes transparency, security, and speed, making crypto transactions accessible to both new and experienced users. From wallet address validation to live status updates, every feature is designed for reliability and ease of use.
             </p>
         </div>
 
         <div className={styles.projectCard}>
         <img src={ZeeTv} alt="CleverPe" />
             <h3>Zee Tv Vaccination Campaign</h3>
-            <p>Veniam veniam excepteur anim ullamco sit Lorem Lorem esse anim aliqua dolor pariatur. Elit commodo occaecat sit in quis ex officia sit aliqua irure. Enim et duis magna consectetur qui ex aliqua occaecat veniam exercitation culpa eu. Esse nostrud dolore magna duis mollit veniam est aliqua quis officia voluptate pariatur mollit reprehenderit. Aliqua incididunt do est in pariatur consectetur exercitation id fugiat nisi pariatur non.
-                Laborum labore non anim incididunt. Incididunt tempor do sunt esse Lorem in officia commodo est. Est qui voluptate do eiusmod occaecat laborum deserunt eu duis nulla et esse reprehenderit.
+            <p>
+            In 2021, I developed a vaccine information platform prototype for Zee TV during the height of the pandemic. The application quickly went viral, attracting an unexpectedly massive audience due to Zee TV’s reach and the critical demand for vaccination updates.
 
-Aliqua enim consequat duis incididunt aliquip occaecat. Occaecat ad amet in in ut velit enim culpa pariatur ullamco et sunt. Magna proident eiusmod amet ex laborum. Dolor sit enim sunt ex. Ad quis tempor dolor consequat exercitation culpa ea quis reprehenderit officia proident laborum ex. Aliquip cillum dolore fugiat aute anim.
-
-Tempor magna id excepteur minim do voluptate dolor nulla. Culpa pariatur qui exercitation ea reprehenderit ipsum veniam. Cillum eu dolore reprehenderit consequat amet ea aute id. Reprehenderit culpa labore reprehenderit cupidatat et. Esse nulla commodo fugiat dolor et dolore exercitation nulla exercitation sunt anim irure ullamco. Velit deserunt ipsum velit pariatur dolor aliquip duis id Lorem.
-
-Ut nisi proident commodo eu eu veniam consectetur dolor aliquip aliqua. Quis ullamco quis fugiat ipsum ad. Tempor adipisicing est laboris do amet quis ea eiusmod. Proident dolor nulla labore excepteur non sint sunt ipsum labore nulla est ex velit. Deserunt enim sit irure voluptate voluptate.
+This sudden spike in traffic required urgent scaling and infrastructure improvements, offering a hands-on lesson in handling production-level workloads, managing system resilience, and rapidly transforming a prototype into a stable, scalable solution capable of supporting enterprise-level demand.
             </p>
         </div>
     

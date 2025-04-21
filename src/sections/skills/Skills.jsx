@@ -52,9 +52,9 @@ export default function Skills() {
 
   return (
     <section className={styles.skillsParent}>
-      <div className={styles.skillsDescription}>
-        <h1>Navigate through my techstack !</h1>
-        <p>scroll the constellation ➔</p>
+      <div  className={styles.skillsDescription} > 
+        <h1 >Navigate through my techstack !</h1>
+        <p>Follow the orbit of innovation ➔</p>
       </div>
 
       <div className={styles.skills}>

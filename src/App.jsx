@@ -8,8 +8,21 @@ import Timeline from './sections/timeline/Timeline'
 import Contact from './sections/contact/Contact'
 import CustomCursor from './components/CustomCursor/CustomCursor'
 import Projects from './sections/projects/Projects'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
+
+
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: false,     // whether animation should happen only once
+      easing: 'ease-in-out', // optional easing
+    });
+  }, []);
   return (
     <>
     {/* <CustomCursor /> */}
