@@ -14,7 +14,7 @@ export default function Contact() {
             <a href="https://www.linkedin.com/in/sharjeelsktg/" target="_blank" rel="noreferrer">
                 <img src={LinkedIn} alt="linkedin" />
             </a>
-            <a href="https://www.instagram.com/sharjeelshaikh/" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/sharjeel_sk_/" target="_blank" rel="noreferrer">
                 <img src={Instagram} alt="instagram" />
             </a>
             <a href="mailto:sharjeelarts@gmail.com" target="_blank" rel="noreferrer">
