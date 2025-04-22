@@ -11,13 +11,13 @@ export default function Contact() {
         <p>Want to connect? Just tap an icon and let’s make it happen — whether it’s a quick hello, a collaboration, or a deep conversation.</p>
 
         <div className={styles.contactIcons}>
-            <a href="https://www.linkedin.com/in/sharjeelshaikh/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/sharjeelsktg/" target="_blank" rel="noreferrer">
                 <img src={LinkedIn} alt="linkedin" />
             </a>
             <a href="https://www.instagram.com/sharjeelshaikh/" target="_blank" rel="noreferrer">
                 <img src={Instagram} alt="instagram" />
             </a>
-            <a href="mailto:VX9Gd@example.com" target="_blank" rel="noreferrer">
+            <a href="mailto:sharjeelarts@gmail.com" target="_blank" rel="noreferrer">
                 <img src={Gmail} alt="gmail" />
             </a>
         </div>

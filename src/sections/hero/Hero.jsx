@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
 
-      <div data-aos="fade-up" className={styles.info}>
+      <div  className={styles.info}>
         <p>"Vision without execution is just hallucination."</p>
         <h2>
           Specializing in the <span>MERN</span> stack, I transform business ideas

@@ -18,26 +18,27 @@ import { useEffect } from 'react';
 export default function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration in ms
+      duration: 500, // animation duration in ms
       once: false,     // whether animation should happen only once
       easing: 'ease-in-out', // optional easing
     });
   }, []);
   return (
-    <>
-    {/* <CustomCursor /> */}
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-      
-      <div className="content">
-        <Hero />
-        <Skills />
-        <Timeline />
-        <Projects />
-        <Contact />
+<>
+  <div className="star-background">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </div>
 
-      </div>
-    </>
+  <div className="page-wrapper">
+    <Hero />
+    <Skills />
+    <Timeline />
+    <Projects />
+    <Contact />
+  </div>
+</>
+
   )
 }

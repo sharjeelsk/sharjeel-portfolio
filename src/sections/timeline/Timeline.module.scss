@@ -127,3 +127,130 @@
     background: linear-gradient(45deg, variables.$secondary, variables.$tertiary);
     z-index: 2;
 }
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+
+}
+
+/* Small Tablet & Mobile - 768px */
+@media (max-width: 768px) {
+
+}
+
+/* Mobile - 600px */
+@media (max-width: 600px) {
+    .timelineParent {
+        margin-top: 30%;
+        h1{
+            text-align: center;
+            margin-bottom: 15%;
+            font-size: 3rem;
+        }
+    }
+    
+    .timeline {
+        width: 90%;
+    }
+      
+    .content {
+        position: relative;
+        .year{
+            text-align: right;
+            width: 48%;
+            padding-bottom: 1%;
+            padding-top: 5%;
+            border-bottom: 2px solid variables.$secondary;
+        }
+    
+        .description {
+            width: 48%;
+            text-align: right;
+            color: white;
+        }
+        
+    }
+    
+    /* Dot part */
+    .content::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, variables.$secondary, variables.$tertiary);
+        z-index: 2;
+    }
+    
+    
+    .contentRight {
+        position: relative;
+        margin-top: 5%;
+        .year{
+            text-align: left;
+            width: 48%;
+            margin-left: auto;
+            padding-bottom: 1%;
+            border-bottom: 2px solid variables.$secondary;
+        }
+    
+        .description {
+            width: 48%;
+            margin-left: auto;
+            text-align: left;
+            color: white;
+        }
+        
+    }
+    
+    /* Dot part */
+    .contentRight::before {
+        content: '';
+        position: absolute;
+        top:25px;
+        
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, variables.$secondary, variables.$tertiary);
+        z-index: 2;
+    }
+    
+    
+    .contentLeft {
+        position: relative;
+        margin-top: 5%;
+        .year{
+            text-align: right;
+            width: 48%;
+            padding-bottom: 1%;
+            border-bottom: 2px solid variables.$secondary;
+        }
+    
+        .description {
+            width: 48%;
+            text-align: right;
+            color: white;
+        }
+        
+    }
+    
+    /* Dot part */
+    .contentLeft::before {
+        content: '';
+        position: absolute;
+        top:25px;
+        
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, variables.$secondary, variables.$tertiary);
+        z-index: 2;
+    }
+}

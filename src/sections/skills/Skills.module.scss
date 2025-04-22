@@ -64,4 +64,44 @@
     text-align: center;
     color: #fff;
   }
+
+  .invert{
+    filter: invert(1) brightness(1.2) contrast(1.2);
+    
+  }
+}
+
+/* Tablet - 1024px */
+@media (max-width: 1024px) {
+
+}
+
+/* Small Tablet & Mobile - 768px */
+@media (max-width: 768px) {
+
+}
+
+/* Mobile - 600px */
+@media (max-width: 600px) {
+  .skillsParent {
+    grid-template-columns: 1fr;
+
+  }
+  
+  .skillsDescription {
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+      margin: 0 0 1rem 0;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  
+  .skill {
+    width: 90px;
+    height: 90px;
+  }
 }

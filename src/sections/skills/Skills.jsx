@@ -54,13 +54,15 @@ export default function Skills() {
     <section className={styles.skillsParent}>
       <div  className={styles.skillsDescription} > 
         <h1 >Navigate through my techstack !</h1>
-        <p>Follow the orbit of innovation ➔</p>
+        <p>Follow the orbit of innovation</p>
       </div>
 
       <div className={styles.skills}>
         {techStack.map((skill) => (
           <div className={styles.skill} key={skill.id}>
-            <img src={skill.image} alt={skill.name} />
+            <img 
+            className={['Express Js', 'GitHub', 'NextJS'].includes(skill.name) ? styles.invert : ''}
+            src={skill.image} alt={skill.name} />
             <p>{skill.name}</p>
           </div>
         ))}
