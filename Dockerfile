@@ -1,23 +1,20 @@
-# Use official Node image as a build environment
+# Stage 1 — Build
 FROM node:18-alpine as build
 
-# Set working directory
 WORKDIR /app
 
-# Copy package.json and install dependencies
 COPY package*.json ./
 RUN npm install
 
-# Copy all files and build
 COPY . .
 RUN npm run build
 
-# Stage 2: Serve the build with nginx
+# Stage 2 — Serve with NGINX
 FROM nginx:stable-alpine
-COPY --from=build /app/build /usr/share/nginx/html
 
-# Expose port 80
+# Copy Vite build output (dist)
+COPY --from=build /app/dist /usr/share/nginx/html
+
 EXPOSE 80
 
-# Start nginx
 CMD ["nginx", "-g", "daemon off;"]
