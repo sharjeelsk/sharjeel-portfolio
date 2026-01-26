@@ -12,7 +12,7 @@ Live: https://www.sharjeelshaikh.dev/
 - JavaScript (ES6+)
 - Tailwind CSS
 - Framer Motion
-- Vite / CRA (depending on your setup)
+- Vite
 
 ---
 
