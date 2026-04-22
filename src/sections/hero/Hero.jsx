@@ -16,7 +16,7 @@ export default function Hero() {
       </div>
 
       <div className={styles.profileSection}>
-        <img src="/profile.png" alt="profile" />
+        <img src="/profile2.png" alt="profile" />
       </div>
     </section>
   );
