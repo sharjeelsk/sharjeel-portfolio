@@ -1,138 +1,143 @@
-// import React from 'react'
-// import styles from './Projects.module.scss'
-// import CleverPe from '../../assets/project-images/cleverpe.png'
-// import CashX from '../../assets/project-images/cashx.png'
-// import TgCrypt from '../../assets/project-images/tgcrypt.png'
-// import ZeeTv from '../../assets/project-images/zeetv.png'
-
-// export default function Projects() {
-//   return (
-//     <div className={styles.projectParent}>
-//         <h1>My Universe of Code</h1>
-//         <p>Every project here tells a story — a story of an idea, nurtured through code, and transformed into impactful digital experiences.</p>
-//     <div className={styles.projectContainer}>
-//         <a href="https://cleverpe.com/" target="_blank" rel="noreferrer">
-//         <div 
-//         className={styles.projectCard}>
-//             <img src={CleverPe} alt="CleverPe" />
-//             <h3>CleverPe</h3>
-            // <p>
-            // CleverPe is a cutting-edge fintech platform that offers a seamless Buy Now, Pay Later experience without the need for traditional credit cards. As the Frontend Lead, I contributed to the architecture and development of four core applications that serve customers, merchants, and admins. Our goal was to create a smooth, scalable, and intuitive experience for users across various devices.
-            // Built using React, Node.js, and MongoDB, CleverPe empowers users to make instant payments, track purchases, and manage finances — all within a secure and user-friendly environment. My role involved crafting clean UI, ensuring cross-platform compatibility, and optimizing performance for a rapidly growing user base.
-            // </p>
-//         </div>
-//         </a>
-
-//         <a href="https://cashx.ai/" target="_blank" rel="noreferrer">
-//         <div className={styles.projectCard}>
-//         <img src={CashX} alt="CashX" />
-//             <h3>CashX</h3>
-            // <p>
-            // CashX is a next-generation fintech solution designed to digitize cash for underbanked communities, providing them with access to essential financial services around the clock. As the Lead Developer, I architected and built the entire platform using the MERN stack and PostgreSQL.
-            // The system includes self-service kiosks, a robust back-office dashboard, and mobile apps for both Android and iOS — enabling users to perform bill payments, money transfers, mobile top-ups, and in-app shopping with ease. CashX is built for scale, with a focus on accessibility, reliability, and user-first design — aiming to empower millions across the USA and Mexico with secure, cashless experiences.
-            // </p>
-//         </div>
-//         </a>
-
-
-//         <a href="https://tgcrypt.vercel.app/" target="_blank" rel="noreferrer">
-//         <div className={styles.projectCard}>
-//         <img src={TgCrypt} alt="TgCrypt" />
-//             <h3>Tg Crypt</h3>
-//             <p>
-//             TgCrypt is a blockchain-powered application built using the MERN stack, designed to facilitate secure crypto transfers across wallet addresses. It provides a simple, intuitive interface where users can send cryptocurrencies seamlessly while tracking transaction history in real-time.
-
-// With blockchain integration at its core, TgCrypt emphasizes transparency, security, and speed, making crypto transactions accessible to both new and experienced users. From wallet address validation to live status updates, every feature is designed for reliability and ease of use.
-//             </p>
-//         </div>
-//         </a>
-
-//         <a href="https://zeevaccination.vercel.app/" target="_blank" rel="noreferrer">
-//         <div className={styles.projectCard}>
-//         <img src={ZeeTv} alt="ZeeTv" />
-//             <h3>Zee Tv Vaccination Campaign</h3>
-//             <p>
-//             In 2021, I developed a vaccine information platform prototype for Zee TV during the height of the pandemic. The application quickly went viral, attracting an unexpectedly massive audience due to Zee TV’s reach and the critical demand for vaccination updates.
-
-// This sudden spike in traffic required urgent scaling and infrastructure improvements, offering a hands-on lesson in handling production-level workloads, managing system resilience, and rapidly transforming a prototype into a stable, scalable solution capable of supporting enterprise-level demand.
-//             </p>
-//         </div>
-//         </a>
-    
-    
-//     </div>
-//     </div>
-    
-//   )
-// }
-
-import React from 'react'
-import styles from './Projects.module.scss'
-import CleverPe from '../../assets/project-images/cleverpe.png'
-import CashX from '../../assets/project-images/cashx.png'
-import TgCrypt from '../../assets/project-images/tgcrypt.png'
-import ZeeTv from '../../assets/project-images/zeetv.png'
+import React from 'react';
+import styles from './Projects.module.scss';
+import CleverPe from '../../assets/project-images/cleverpe.png';
+import CashX from '../../assets/project-images/cashx.png';
+import TgCrypt from '../../assets/project-images/tgcrypt.png';
+import ZeeTv from '../../assets/project-images/zeetv.png';
 
 export default function Projects() {
+  const projects = [
+    {
+      id: 1,
+      name: 'CashX',
+      image: CashX,
+      url: 'https://cashx.ai/',
+      category: 'Featured Build',
+      stack: 'MERN + PostgreSQL',
+      impact: 'Built for underbanked communities across kiosk, mobile, and admin platforms.',
+      description:
+        'CashX is a fintech ecosystem built to digitize cash and unlock essential services like bill payments, money transfers, and shopping. I led development across the full platform, with a strong focus on scale, operations, and product reliability.',
+      featured: true,
+    },
+    {
+      id: 2,
+      name: 'CleverPe',
+      image: CleverPe,
+      url: 'https://cleverpe.com/',
+      category: 'Fintech Platform',
+      stack: 'React + Node.js + MongoDB',
+      impact: 'Supported merchants, admins, and customers in a BNPL product ecosystem.',
+      description:
+        'As Frontend Lead, I contributed to the architecture and delivery of multiple production apps that made the CleverPe lending experience smoother, faster, and more scalable.',
+    },
+    {
+      id: 3,
+      name: 'Tg Crypt',
+      image: TgCrypt,
+      url: 'https://tgcrypt.vercel.app/',
+      category: 'Web3 Product',
+      stack: 'MERN + Blockchain APIs',
+      impact: 'Focused on secure transfers, real-time tracking, and a simpler crypto flow.',
+      description:
+        'TgCrypt streamlines wallet-to-wallet crypto transfers with a clean interface, validation flows, and transaction transparency designed for both new and experienced users.',
+    },
+    {
+      id: 4,
+      name: 'Zee TV Vaccination Campaign',
+      image: ZeeTv,
+      url: 'https://zeevaccination.vercel.app/',
+      category: 'High-Traffic Campaign',
+      stack: 'Frontend Prototype + Scaled Delivery',
+      impact: 'Evolved from a fast-moving campaign build into a traffic-heavy production challenge.',
+      description:
+        'Built during the pandemic, this vaccine information experience quickly drew massive reach. It became a practical lesson in resilience, speed, and scaling under real-world demand.',
+    },
+  ];
+
   const openInNewTab = (url) => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
+  const featuredProject = projects.find((project) => project.featured);
+  const supportingProjects = projects.filter((project) => !project.featured);
+
   return (
-    <div className={styles.projectParent}>
-      <h1>My Universe of Code</h1>
-      <p>Every project here tells a story — a story of an idea, nurtured through code, and transformed into impactful digital experiences.</p>
-      <div className={styles.projectContainer}>
-        <div
-          className={styles.projectCard}
-          onClick={() => openInNewTab("https://cleverpe.com/")}
-        >
-          <img src={CleverPe} alt="CleverPe" />
-          <h3>CleverPe</h3>
-          <p>
-            CleverPe is a cutting-edge fintech platform that offers a seamless Buy Now, Pay Later experience without the need for traditional credit cards. As the Frontend Lead, I contributed to the architecture and development of four core applications that serve customers, merchants, and admins. Our goal was to create a smooth, scalable, and intuitive experience for users across various devices.
-            Built using React, Node.js, and MongoDB, CleverPe empowers users to make instant payments, track purchases, and manage finances — all within a secure and user-friendly environment. My role involved crafting clean UI, ensuring cross-platform compatibility, and optimizing performance for a rapidly growing user base.
-            </p>
-        </div>
-
-        <div
-          className={styles.projectCard}
-          onClick={() => openInNewTab("https://cashx.ai/")}
-        >
-          <img src={CashX} alt="CashX" />
-          <h3>CashX</h3>
-          <p>
-            CashX is a next-generation fintech solution designed to digitize cash for underbanked communities, providing them with access to essential financial services around the clock. As the Lead Developer, I architected and built the entire platform using the MERN stack and PostgreSQL.
-            The system includes self-service kiosks, a robust back-office dashboard, and mobile apps for both Android and iOS — enabling users to perform bill payments, money transfers, mobile top-ups, and in-app shopping with ease. CashX is built for scale, with a focus on accessibility, reliability, and user-first design — aiming to empower millions across the USA and Mexico with secure, cashless experiences.
-            </p>
-        </div>
-
-        <div
-          className={styles.projectCard}
-          onClick={() => openInNewTab("https://tgcrypt.vercel.app/")}
-        >
-          <img src={TgCrypt} alt="TgCrypt" />
-          <h3>Tg Crypt</h3>
-          <p>
-            TgCrypt is a blockchain-powered application built using the MERN stack, designed to facilitate secure crypto transfers across wallet addresses. It provides a simple, intuitive interface where users can send cryptocurrencies seamlessly while tracking transaction history in real-time.
-
-With blockchain integration at its core, TgCrypt emphasizes transparency, security, and speed, making crypto transactions accessible to both new and experienced users. From wallet address validation to live status updates, every feature is designed for reliability and ease of use.
-            </p>
-        </div>
-
-        <div
-          className={styles.projectCard}
-          onClick={() => openInNewTab("https://zeevaccination.vercel.app/")}
-        >
-          <img src={ZeeTv} alt="ZeeTv" />
-          <h3>Zee Tv Vaccination Campaign</h3>
-          <p>
-            In 2021, I developed a vaccine information platform prototype for Zee TV during the height of the pandemic. The application quickly went viral, attracting an unexpectedly massive audience due to Zee TV’s reach and the critical demand for vaccination updates.
-
-This sudden spike in traffic required urgent scaling and infrastructure improvements, offering a hands-on lesson in handling production-level workloads, managing system resilience, and rapidly transforming a prototype into a stable, scalable solution capable of supporting enterprise-level demand.
-            </p>
-        </div>
+    <section id="projects" className={styles.projectParent}>
+      <div className={styles.sectionHeader}>
+        <p className={styles.kicker}>Project Vault</p>
+        <h1>Built for users, scale, and real-world impact</h1>
+        <p className={styles.sectionDescription}>
+          The projects tab is designed as a focused showcase: one flagship build up front,
+          followed by supporting work that highlights product thinking, frontend execution,
+          and production readiness.
+        </p>
       </div>
-    </div>
+
+      {featuredProject && (
+        <article
+          className={styles.featuredProject}
+          onClick={() => openInNewTab(featuredProject.url)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              event.preventDefault();
+              openInNewTab(featuredProject.url);
+            }
+          }}
+        >
+          <div className={styles.featuredVisual}>
+            <img src={featuredProject.image} alt={featuredProject.name} />
+          </div>
+
+          <div className={styles.featuredContent}>
+            <span className={styles.projectBadge}>{featuredProject.category}</span>
+            <h2>{featuredProject.name}</h2>
+            <p className={styles.stack}>{featuredProject.stack}</p>
+            <p className={styles.description}>{featuredProject.description}</p>
+
+            <div className={styles.projectStats}>
+              <div>
+                <span>Impact</span>
+                <p>{featuredProject.impact}</p>
+              </div>
+              <div>
+                <span>Focus</span>
+                <p>Scalable product delivery, ecosystem thinking, and user trust.</p>
+              </div>
+            </div>
+
+            <span className={styles.projectLink}>Open project</span>
+          </div>
+        </article>
+      )}
+
+      <div className={styles.projectGrid}>
+        {supportingProjects.map((project) => (
+          <article
+            key={project.id}
+            className={styles.projectCard}
+            onClick={() => openInNewTab(project.url)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                openInNewTab(project.url);
+              }
+            }}
+          >
+            <img src={project.image} alt={project.name} />
+            <div className={styles.cardBody}>
+              <span className={styles.projectBadge}>{project.category}</span>
+              <h3>{project.name}</h3>
+              <p className={styles.stack}>{project.stack}</p>
+              <p className={styles.description}>{project.description}</p>
+              <p className={styles.impact}>{project.impact}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 }

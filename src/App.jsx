@@ -8,6 +8,7 @@ import Timeline from './sections/timeline/Timeline'
 import Contact from './sections/contact/Contact'
 import CustomCursor from './components/CustomCursor/CustomCursor'
 import Projects from './sections/projects/Projects'
+import Navbar from './components/Navbar/Navbar'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -32,6 +33,7 @@ export default function App() {
   </div>
 
   <div className="page-wrapper">
+    <Navbar />
     <Hero />
     <Skills />
     <Timeline />

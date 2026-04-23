@@ -5,7 +5,7 @@ export default function Timeline() {
 
   
   return (
-    <section className={styles.timelineParent}>
+    <section id="journey" className={styles.timelineParent}>
         <h1 data-aos="fade-up">From Hello World to the World</h1>
     <div className={styles.timeline}>
       <div  className={styles.content} >

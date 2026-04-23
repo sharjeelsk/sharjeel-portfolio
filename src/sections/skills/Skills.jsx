@@ -51,7 +51,7 @@ export default function Skills() {
 
 
   return (
-    <section className={styles.skillsParent}>
+    <section id="skills" className={styles.skillsParent}>
       <div  className={styles.skillsDescription} > 
         <h1 >Navigate through my techstack !</h1>
         <p>Follow the orbit of innovation</p>

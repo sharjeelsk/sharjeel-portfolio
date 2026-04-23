@@ -1,0 +1,135 @@
+@use '../../styles/variables';
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 1rem 1.5rem 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.9rem 1.25rem;
+  border: 1px solid rgba(6, 143, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(9, 10, 15, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.28),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.brand {
+  color: variables.$primary;
+  font-family: variables.$big-shoulders;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.navLink,
+.projectsLink {
+  color: rgba(238, 238, 238, 0.85);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+.navLink:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: variables.$primary;
+}
+
+.projectsLink {
+  color: variables.$primary;
+  background: linear-gradient(
+    120deg,
+    rgba(78, 79, 235, 0.95),
+    rgba(6, 143, 255, 0.95)
+  );
+  box-shadow: 0 12px 30px rgba(6, 143, 255, 0.28);
+}
+
+.projectsLink:hover {
+  box-shadow: 0 16px 36px rgba(6, 143, 255, 0.38);
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.75rem 1rem 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 28px;
+    padding: 1rem;
+  }
+
+  .brand {
+    text-align: center;
+  }
+
+  .navLinks {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .navLink,
+  .projectsLink {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding-inline: 0.75rem;
+  }
+
+  .navbar {
+    padding: 0.85rem;
+  }
+
+  .brand {
+    font-size: 1.7rem;
+  }
+
+  .navLinks {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .navLink,
+  .projectsLink {
+    text-align: center;
+  }
+}

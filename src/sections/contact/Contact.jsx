@@ -6,7 +6,7 @@ import Instagram from '../../assets/contact-icons/instagram.svg'
 
 export default function Contact() {
   return (
-    <div className={styles.contact}>
+    <section id="contact" className={styles.contact}>
         <h1>Catch Me On Your Favorite Platform</h1>
         <p>Want to connect? Just tap an icon and let’s make it happen — whether it’s a quick hello, a collaboration, or a deep conversation.</p>
 
@@ -21,6 +21,6 @@ export default function Contact() {
                 <img src={Gmail} alt="gmail" />
             </a>
         </div>
-    </div>
+    </section>
   )
 }
